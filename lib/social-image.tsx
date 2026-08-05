@@ -64,8 +64,8 @@ export async function renderSocialImage() {
           style={{
             display: "flex",
             flexDirection: "column",
+            alignItems: "center",
             justifyContent: "center",
-            position: "relative",
             flex: 1,
             backgroundColor: "#ffffff",
             padding: "0 90px",
@@ -74,28 +74,25 @@ export async function renderSocialImage() {
           <div
             style={{
               display: "flex",
-              flexDirection: "column",
-              fontSize: 56,
+              fontSize: 48,
               fontWeight: 800,
-              color: "#dc2626",
-              lineHeight: 1.35,
+              color: "#182643",
+              letterSpacing: 6,
             }}
           >
-            <span>건강검진 · 암 · 만성질환</span>
-            <span>조기 발견과 지속관리</span>
+            삶 과 예술 과 질병
           </div>
           <div
             style={{
               display: "flex",
-              position: "absolute",
-              right: 90,
-              bottom: 36,
-              fontSize: 28,
-              fontWeight: 700,
-              color: "#182643",
+              alignItems: "center",
+              marginTop: 24,
+              fontSize: 26,
+              fontWeight: 400,
+              color: "#8b93a3",
             }}
           >
-            - 최원락내과
+            최원락 내과 의원&nbsp;&nbsp;051-207-2700
           </div>
         </div>
       </div>
