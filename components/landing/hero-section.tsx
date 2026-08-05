@@ -1,7 +1,7 @@
 import { MapPin, Phone } from "lucide-react";
+import Image from "next/image";
 
 import { heroContent, siteConfig } from "@/lib/site-config";
-import { ImagePlaceholder } from "@/components/landing/placeholder";
 
 export function HeroSection() {
   return (
@@ -45,11 +45,16 @@ export function HeroSection() {
         </div>
 
         <div className="order-1 md:order-2">
-          <ImagePlaceholder
-            label="원장 정면 프로필 사진"
-            ratio="aspect-square md:aspect-[4/5]"
-            className="mx-auto w-full max-w-sm md:max-w-none"
-          />
+          <div className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-2xl md:aspect-[4/5] md:max-w-none">
+            <Image
+              src="/images/doctor/choi-wonrak-profile.jpg"
+              alt="최원락 원장 프로필 사진"
+              fill
+              priority
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -1,5 +1,7 @@
+import Image from "next/image";
+
 import { doctorInfo, doctorStory } from "@/lib/site-config";
-import { ImagePlaceholder, TbdText } from "@/components/landing/placeholder";
+import { TbdText } from "@/components/landing/placeholder";
 
 export function DoctorSection() {
   return (
@@ -12,7 +14,15 @@ export function DoctorSection() {
 
         <div className="mt-10 grid gap-10 md:grid-cols-[minmax(0,260px)_1fr] md:gap-14">
           <div>
-            <ImagePlaceholder label="원장 프로필 사진" ratio="aspect-[4/5]" />
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl">
+              <Image
+                src="/images/doctor/choi-wonrak-profile.jpg"
+                alt="최원락 원장 프로필 사진"
+                fill
+                sizes="(min-width: 768px) 260px, 100vw"
+                className="object-cover"
+              />
+            </div>
             <div className="mt-4 text-center md:text-left">
               <p className="font-heading text-xl font-semibold text-brand-navy-deep">
                 {doctorInfo.name}

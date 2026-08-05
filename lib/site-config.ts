@@ -103,7 +103,7 @@ export const trustStats: { label: string; value: string | null; suffix: string }
 export const doctorInfo = {
   name: "최원락",
   title: "내과 전문의",
-  photoAvailable: false,
+  photoAvailable: true,
   bioItems: [
     { label: "의과대학 졸업", value: "부산의대 졸업" },
     { label: "내과 전문의 자격", value: "내과 전문의 · 의학박사" },
