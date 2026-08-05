@@ -16,7 +16,7 @@ export function DoctorSection() {
           <div>
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl">
               <Image
-                src="/images/doctor/choi-wonrak-profile.jpg"
+                src="/images/doctor/choi-wonrak-profile2.jpg"
                 alt="최원락 원장 프로필 사진"
                 fill
                 sizes="(min-width: 768px) 260px, 100vw"
