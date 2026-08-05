@@ -35,6 +35,11 @@ export const metadata: Metadata = {
     description:
       "오랜 임상 경험과 정확한 설명으로 검사 결과의 의미를 함께 살피고, 지금의 질환뿐 아니라 앞으로의 건강 위험까지 관리하는 내과입니다.",
   },
+  verification: {
+    other: {
+      "naver-site-verification": "61633b58c2cf12c230fd3ae3ad179e9694609688",
+    },
+  },
 };
 
 export default function RootLayout({
