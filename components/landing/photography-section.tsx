@@ -3,6 +3,7 @@ import { Camera, MapPin } from "lucide-react";
 import {
   bipfEditions,
   bipfIntro,
+  featuredPhotographyWork,
   photographyIntro,
   photographyWorks,
 } from "@/lib/site-config";
@@ -24,6 +25,32 @@ export function PhotographySection() {
           {photographyIntro}
         </p>
 
+        {featuredPhotographyWork.image && (
+          <div className="mt-10 grid gap-6 rounded-2xl border border-brand-navy/10 bg-white p-6 md:grid-cols-[minmax(0,300px)_1fr] md:items-center md:gap-10 md:p-8">
+            <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-xl md:mx-0">
+              <LightboxImage
+                src={featuredPhotographyWork.image}
+                alt={`${featuredPhotographyWork.title} 작품 이미지`}
+                sizes="(min-width: 768px) 300px, 100vw"
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <span className="text-[13px] font-medium text-brand-teal">
+                {featuredPhotographyWork.type}
+              </span>
+              <h3 className="mt-1 font-heading text-2xl font-semibold text-brand-navy-deep">
+                《{featuredPhotographyWork.title}》
+              </h3>
+              <p className="mt-3 text-[16px] leading-[1.8] text-brand-ink-muted">
+                {featuredPhotographyWork.description ?? (
+                  <TbdText>작품 소개 준비 중</TbdText>
+                )}
+              </p>
+            </div>
+          </div>
+        )}
+
         <div className="mt-14 md:mt-20">
           <p className="text-[15px] font-semibold text-brand-teal">개인전</p>
           <h3 className="mt-2 max-w-2xl text-balance font-heading text-xl font-semibold text-brand-navy-deep md:text-2xl">
@@ -38,7 +65,7 @@ export function PhotographySection() {
               className="overflow-hidden rounded-2xl border border-brand-navy/10 bg-white"
             >
               {work.image ? (
-                <div className="relative aspect-[4/5] w-full overflow-hidden bg-brand-navy/5">
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-navy/5">
                   <LightboxImage
                     src={work.image}
                     alt={`${work.title} 작품 이미지`}
@@ -49,7 +76,7 @@ export function PhotographySection() {
               ) : (
                 <ImagePlaceholder
                   label={`${work.title} 작품 이미지`}
-                  ratio="aspect-[4/5]"
+                  ratio="aspect-[4/3]"
                   className="rounded-none"
                 />
               )}

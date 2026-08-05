@@ -159,6 +159,17 @@ export const doctorStory: StorySection[] = [
 export const photographyIntro =
   "감천마을이 감천문화마을로 변해가는 과정과 그 안에서 살아가는 사람들의 얼굴, 그리고 아버지와 어머니의 삶과 죽음을 사진으로 오래 들여다보았습니다. 진료가 몸을 살피는 일이라면, 사진은 삶을 오래 들여다보는 일이었습니다.";
 
+export const featuredPhotographyWork: PhotographyWork = {
+  id: "life-art-and-death",
+  title: "Life, Art, and Death",
+  type: "전시",
+  description: null,
+  exhibitionYear: null,
+  publishYear: null,
+  publisher: null,
+  image: "/images/photography/life-art-and-death.jpg",
+};
+
 export const photographyWorks: PhotographyWork[] = [
   {
     id: "father",
@@ -192,16 +203,6 @@ export const photographyWorks: PhotographyWork[] = [
     publishYear: null,
     publisher: null,
     image: null,
-  },
-  {
-    id: "life-art-and-death",
-    title: "Life, Art, and Death",
-    type: "전시",
-    description: null,
-    exhibitionYear: null,
-    publishYear: null,
-    publisher: null,
-    image: "/images/photography/life-art-and-death.jpg",
   },
   {
     id: "cotton-candy",
