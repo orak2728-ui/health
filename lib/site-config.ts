@@ -50,6 +50,7 @@ export type PhotographyWork = {
   exhibitionYear: string | null;
   publishYear: string | null;
   publisher: string | null;
+  image: string | null;
 };
 
 export type BipfEdition = {
@@ -168,6 +169,7 @@ export const photographyWorks: PhotographyWork[] = [
     exhibitionYear: null,
     publishYear: null,
     publisher: null,
+    image: null,
   },
   {
     id: "half-moon-hill",
@@ -178,6 +180,7 @@ export const photographyWorks: PhotographyWork[] = [
     exhibitionYear: null,
     publishYear: null,
     publisher: null,
+    image: null,
   },
   {
     id: "mother",
@@ -188,6 +191,17 @@ export const photographyWorks: PhotographyWork[] = [
     exhibitionYear: null,
     publishYear: null,
     publisher: null,
+    image: null,
+  },
+  {
+    id: "life-art-and-death",
+    title: "Life, Art, and Death",
+    type: "전시",
+    description: null,
+    exhibitionYear: null,
+    publishYear: null,
+    publisher: null,
+    image: "/images/photography/life-art-and-death.jpg",
   },
   {
     id: "cotton-candy",
@@ -197,6 +211,7 @@ export const photographyWorks: PhotographyWork[] = [
     exhibitionYear: null,
     publishYear: null,
     publisher: null,
+    image: null,
   },
 ];
 

@@ -37,11 +37,22 @@ export function PhotographySection() {
               key={work.id}
               className="overflow-hidden rounded-2xl border border-brand-navy/10 bg-white"
             >
-              <ImagePlaceholder
-                label={`${work.title} 작품 이미지`}
-                ratio="aspect-[4/3]"
-                className="rounded-none"
-              />
+              {work.image ? (
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-navy/5">
+                  <LightboxImage
+                    src={work.image}
+                    alt={`${work.title} 작품 이미지`}
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+              ) : (
+                <ImagePlaceholder
+                  label={`${work.title} 작품 이미지`}
+                  ratio="aspect-[4/3]"
+                  className="rounded-none"
+                />
+              )}
               <div className="p-5">
                 <div className="flex flex-wrap items-baseline gap-2">
                   <h3 className="font-heading text-lg font-semibold text-brand-navy-deep">
