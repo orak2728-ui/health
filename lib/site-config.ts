@@ -251,6 +251,25 @@ export const bipfEditions: BipfEdition[] = [
   },
 ];
 
+export type BipfEventPhoto = {
+  id: string;
+  image: string;
+  caption: string;
+};
+
+export const bipfEventPhotos: BipfEventPhoto[] = [
+  {
+    id: "2022-1",
+    image: "/images/bipf/bipf-2022-1.jpg",
+    caption: "2022 부산국제사진제 《살과 돌 Flesh and Stone》 전시 현장",
+  },
+  {
+    id: "2022-2",
+    image: "/images/bipf/bipf-2022-2.jpg",
+    caption: "2022 부산국제사진제 《살과 돌 Flesh and Stone》 전시 현장",
+  },
+];
+
 export const problemStatements = [
   "아프지 않다고 안심할 수는 없습니다. 중요한 질환 중에는 증상 없이 진행되는 경우가 있기 때문입니다.",
   "검사는 많이 하는 것보다, 현재의 위험에 맞는 검사를 선택하고 결과의 의미를 이해하는 것이 중요합니다.",

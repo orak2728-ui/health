@@ -2,6 +2,7 @@ import { Camera, MapPin } from "lucide-react";
 
 import {
   bipfEditions,
+  bipfEventPhotos,
   bipfIntro,
   featuredPhotographyWork,
   photographyIntro,
@@ -156,6 +157,27 @@ export function PhotographySection() {
               </li>
             ))}
           </ol>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {bipfEventPhotos.map((photo) => (
+              <div
+                key={photo.id}
+                className="overflow-hidden rounded-2xl border border-brand-navy/10 bg-white"
+              >
+                <div className="relative aspect-[3/2] w-full overflow-hidden bg-brand-navy/5">
+                  <LightboxImage
+                    src={photo.image}
+                    alt={photo.caption}
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+                <p className="p-4 text-[13px] text-brand-ink-muted">
+                  {photo.caption}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
