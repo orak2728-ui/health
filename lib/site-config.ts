@@ -261,12 +261,14 @@ export const bipfEventPhotos: BipfEventPhoto[] = [
   {
     id: "2022-1",
     image: "/images/bipf/bipf-2022-1.jpg",
-    caption: "2022 부산국제사진제 《살과 돌 Flesh and Stone》 전시 현장",
+    caption:
+      "2022 부산국제사진제 《살과 돌 Flesh and Stone》 폐막 — 조직위원장으로서 전시를 마무리하며 함께한 기념사진",
   },
   {
     id: "2022-2",
     image: "/images/bipf/bipf-2022-2.jpg",
-    caption: "2022 부산국제사진제 《살과 돌 Flesh and Stone》 전시 현장",
+    caption:
+      "작품이 모두 철거된 빈 전시장, 조직위원장으로서 마지막으로 공간을 둘러보던 순간 — 마침 전시기획자 겸 전시감독과 마주 보게 되었습니다.",
   },
 ];
 
