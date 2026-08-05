@@ -47,7 +47,7 @@ export function HeroSection() {
         <div className="order-1 md:order-2">
           <div className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-2xl md:aspect-[4/5] md:max-w-none">
             <Image
-              src="/images/doctor/choi-wonrak-profile2.jpg"
+              src="/images/doctor/choi-wonrak-profile.jpg"
               alt="최원락 원장 프로필 사진"
               fill
               priority
