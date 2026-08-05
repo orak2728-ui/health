@@ -38,7 +38,7 @@ export function PhotographySection() {
               className="overflow-hidden rounded-2xl border border-brand-navy/10 bg-white"
             >
               {work.image ? (
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-navy/5">
+                <div className="relative aspect-[4/5] w-full overflow-hidden bg-brand-navy/5">
                   <LightboxImage
                     src={work.image}
                     alt={`${work.title} 작품 이미지`}
@@ -49,7 +49,7 @@ export function PhotographySection() {
               ) : (
                 <ImagePlaceholder
                   label={`${work.title} 작품 이미지`}
-                  ratio="aspect-[4/3]"
+                  ratio="aspect-[4/5]"
                   className="rounded-none"
                 />
               )}
