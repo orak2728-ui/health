@@ -6,6 +6,8 @@
  * Copy fields already have PRD-approved text and can be edited directly.
  */
 
+export const siteUrl = "https://health-lovat-five.vercel.app";
+
 export type BioItem = {
   label: string;
   value: string | null;

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { siteUrl } from "@/lib/site-config";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://health-lovat-five.vercel.app"),
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: "/",
+  },
   title: "최원락내과 | 암·만성질환 조기 발견과 지속 관리",
   description:
     "오랜 임상 경험과 정확한 설명으로 검사 결과의 의미를 함께 살피고, 지금의 질환뿐 아니라 앞으로의 건강 위험까지 관리하는 내과입니다.",
