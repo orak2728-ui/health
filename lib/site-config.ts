@@ -44,6 +44,11 @@ export type StorySection = {
   body: string[];
 };
 
+export type PhotographyGalleryImage = {
+  src: string;
+  caption: string;
+};
+
 export type PhotographyWork = {
   id: string;
   title: string;
@@ -53,6 +58,7 @@ export type PhotographyWork = {
   publishYear: string | null;
   publisher: string | null;
   image: string | null;
+  gallery?: PhotographyGalleryImage[];
 };
 
 export type BipfEdition = {
@@ -196,7 +202,18 @@ export const photographyWorks: PhotographyWork[] = [
     exhibitionYear: null,
     publishYear: null,
     publisher: null,
-    image: null,
+    image: "/images/photography/gamchuen1.jpg",
+    gallery: [
+      { src: "/images/photography/gamchuen1.jpg", caption: "그냥 바라본 마을" },
+      {
+        src: "/images/photography/gamchuen2.jpg",
+        caption: "비 오는 날, 왜곡된 마을",
+      },
+      {
+        src: "/images/photography/gamchuen3.jpg",
+        caption: "깨어진 유리창 너머로 본 마을",
+      },
+    ],
   },
   {
     id: "mother",

@@ -103,6 +103,26 @@ export function PhotographySection() {
                     </>
                   )}
                 </p>
+
+                {work.gallery && (
+                  <div className="mt-4 grid grid-cols-3 gap-2">
+                    {work.gallery.map((photo) => (
+                      <div key={photo.src}>
+                        <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-brand-navy/5">
+                          <LightboxImage
+                            src={photo.src}
+                            alt={photo.caption}
+                            sizes="120px"
+                            className="object-cover"
+                          />
+                        </div>
+                        <p className="mt-1.5 text-[11px] leading-[1.4] text-brand-ink-muted">
+                          {photo.caption}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           ))}
