@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { doctorInfo, doctorStory } from "@/lib/site-config";
 import { LightboxImage } from "@/components/landing/lightbox-image";
 import { TbdText } from "@/components/landing/placeholder";
@@ -16,10 +14,9 @@ export function DoctorSection() {
         <div className="mt-10 grid gap-10 md:grid-cols-[minmax(0,260px)_1fr] md:gap-14">
           <div>
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl">
-              <Image
-                src="/images/doctor/choi-wonrak-profile.jpg"
-                alt="최원락 원장 프로필 사진"
-                fill
+              <LightboxImage
+                src={doctorInfo.photographerNoteImage}
+                alt="최원락 원장 — 《Life, Art, and Death》"
                 sizes="(min-width: 768px) 260px, 100vw"
                 className="object-cover"
               />
@@ -37,19 +34,9 @@ export function DoctorSection() {
               {doctorInfo.introCopy}
             </p>
 
-            <div className="mt-6 flex flex-col gap-4 rounded-xl border border-brand-navy/10 bg-white p-4 sm:flex-row sm:items-center">
-              <div className="relative aspect-[3/4] w-full shrink-0 overflow-hidden rounded-lg sm:w-32">
-                <LightboxImage
-                  src={doctorInfo.photographerNoteImage}
-                  alt="사진작가로서의 최원락 — 《Life, Art, and Death》"
-                  sizes="128px"
-                  className="object-cover"
-                />
-              </div>
-              <p className="text-[17px] leading-[1.7] text-brand-ink">
-                {doctorInfo.photographerNote}
-              </p>
-            </div>
+            <p className="mt-4 max-w-2xl text-[17px] leading-[1.7] text-brand-ink">
+              {doctorInfo.photographerNote}
+            </p>
 
             <dl className="mt-8 grid gap-4 sm:grid-cols-2">
               {doctorInfo.bioItems.map((item) => (
