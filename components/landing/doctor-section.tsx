@@ -46,7 +46,7 @@ export function DoctorSection() {
                   className="object-cover"
                 />
               </div>
-              <p className="text-[15px] leading-[1.7] text-brand-ink-muted">
+              <p className="text-[17px] leading-[1.7] text-brand-ink">
                 {doctorInfo.photographerNote}
               </p>
             </div>
