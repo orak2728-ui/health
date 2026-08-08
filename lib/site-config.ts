@@ -135,7 +135,7 @@ export const doctorInfo = {
     "복잡한 의학 정보를 정확하고 쉽게 설명하는 것을 진료의 중요한 부분으로 생각합니다. 검사 결과를 나열하는 데 그치지 않고, 지금의 상태가 무엇을 의미하는지, 앞으로 무엇을 살펴야 하는지를 환자와 함께 확인합니다.",
   photographerNote:
     "동시에 카메라로 삶과 죽음을 오래 들여다보는 사진작가이기도 합니다. 몸을 살피는 진료실 안의 시선과, 삶을 담는 사진 속의 시선은 다르지 않다고 생각합니다.",
-  photographerNoteImage: "/images/photography/life-art-and-death.jpg",
+  photographerNoteImage: "/images/doctor/choi-wonrak-profile.jpg",
 };
 
 export const doctorStory: StorySection[] = [

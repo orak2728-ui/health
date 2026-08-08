@@ -16,7 +16,7 @@ export function DoctorSection() {
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl">
               <LightboxImage
                 src={doctorInfo.photographerNoteImage}
-                alt="최원락 원장 — 《Life, Art, and Death》"
+                alt="최원락 원장 프로필 사진"
                 sizes="(min-width: 768px) 260px, 100vw"
                 className="object-cover"
               />
