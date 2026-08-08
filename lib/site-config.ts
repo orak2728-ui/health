@@ -191,7 +191,12 @@ export const photographyWorks: PhotographyWork[] = [
     exhibitionYear: null,
     publishYear: null,
     publisher: null,
-    image: null,
+    image: "/images/photography/farther1.jpg",
+    gallery: [
+      { src: "/images/photography/farther2.jpg", caption: "얼굴을 가린 손, 다 말하지 못한 마음" },
+      { src: "/images/photography/farther3.jpg", caption: "나란히 놓인 두 켤레의 신발" },
+      { src: "/images/photography/farther4.jpg", caption: "흐릿하게 남은, 함께한 시간" },
+    ],
   },
   {
     id: "half-moon-hill",
