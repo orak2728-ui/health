@@ -50,14 +50,14 @@ export function HeroSection() {
         </div>
 
         <div className="order-1 md:order-2">
-          <div className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-2xl md:aspect-[4/5] md:max-w-none">
+          <div className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-2xl bg-white md:aspect-[4/5] md:max-w-none">
             <Image
-              src="/images/doctor/choi-wonrak-profile.jpg"
+              src="/images/doctor/logo1.jpg"
               alt="최원락 원장 프로필 사진"
               fill
               priority
               sizes="(min-width: 768px) 50vw, 100vw"
-              className="object-cover"
+              className="object-contain"
             />
           </div>
         </div>
