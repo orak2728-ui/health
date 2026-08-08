@@ -96,7 +96,7 @@ export const siteConfig = {
 };
 
 export const heroContent = {
-  headline: "암과 만성질환, 발견부터 지속적인 관리까지",
+  headline: "건강검진부터 암·만성질환의 지속적인 관리까지",
   subcopy:
     "오랜 임상 경험과 정확한 설명으로 검사 결과의 의미를 함께 살피고, 지금의 질환뿐 아니라 앞으로의 건강 위험까지 관리합니다.",
 };
