@@ -11,8 +11,13 @@ export function HeroSection() {
           <p className="mb-4 text-[15px] font-semibold tracking-wide text-brand-teal">
             내과 전문의 최원락
           </p>
-          <h1 className="text-balance font-heading text-[28px] leading-[1.35] font-semibold text-brand-navy-deep md:text-[40px] md:leading-[1.3]">
-            {heroContent.headline}
+          <h1 className="font-heading text-[28px] leading-[1.35] font-semibold text-brand-navy-deep md:text-[40px] md:leading-[1.3]">
+            {heroContent.headline.split("\n").map((line, i) => (
+              <span key={i}>
+                {i > 0 && <br />}
+                {line}
+              </span>
+            ))}
           </h1>
           <p className="mt-5 max-w-lg text-[17px] leading-[1.7] text-brand-ink-muted">
             {heroContent.subcopy}
