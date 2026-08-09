@@ -364,8 +364,8 @@ export const coreServices: ServiceItem[] = [
   },
   {
     id: "checkup-ultrasound",
-    title: "건강검진 · 초음파 검사",
-    description: "증상이 없을 때 발견하는 위험까지 살피는 정기 검진과 초음파 검사입니다.",
+    title: "건강검진",
+    description: "증상이 없을 때 발견하는 위험까지 살피는 정기 검진입니다.",
     bullets: [
       "위 내시경",
       "대장 내시경",
