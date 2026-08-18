@@ -14,10 +14,23 @@ import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
 import { TrustStatsSection } from "@/components/landing/trust-stats-section";
 import { FluidParticlesBackground } from "@/components/ui/fluid-particles-background";
+import { clinicJsonLd, faqJsonLd } from "@/lib/structured-data";
 
 export default function Home() {
   return (
     <div id="top" className="flex min-h-full flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(clinicJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <div className="pointer-events-none fixed inset-0 -z-10">
         <FluidParticlesBackground
           particleCount={350}
