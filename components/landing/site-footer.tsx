@@ -18,6 +18,18 @@ export function SiteFooter() {
             {" · "}
             {siteConfig.phone ?? <TbdText className="border-brand-ivory/30 bg-transparent text-brand-ivory/60">전화번호 확인 중</TbdText>}
           </p>
+          {siteConfig.socials.blog && (
+            <p>
+              <a
+                href={siteConfig.socials.blog}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline decoration-brand-ivory/30 underline-offset-2 hover:text-brand-ivory/80"
+              >
+                블로그 바로가기
+              </a>
+            </p>
+          )}
           <p className="mt-2 text-[12px] text-brand-ivory/40">
             © {new Date().getFullYear()} {clinicName}. All rights reserved.
           </p>

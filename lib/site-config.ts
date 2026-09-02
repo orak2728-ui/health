@@ -90,7 +90,7 @@ export const siteConfig = {
   ] satisfies BusinessHourRow[],
   socials: {
     youtube: null as string | null,
-    blog: null as string | null,
+    blog: "https://blog.naver.com/orak2728" as string | null,
     instagram: null as string | null,
   },
 };

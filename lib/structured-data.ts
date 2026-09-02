@@ -83,6 +83,14 @@ export const clinicJsonLd = {
   openingHoursSpecification: openingHoursSpecification.length
     ? openingHoursSpecification
     : undefined,
+  sameAs:
+    Object.values(siteConfig.socials).filter(
+      (url): url is string => url !== null,
+    ).length > 0
+      ? Object.values(siteConfig.socials).filter(
+          (url): url is string => url !== null,
+        )
+      : undefined,
 };
 
 export const faqJsonLd = {
